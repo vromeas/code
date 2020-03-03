@@ -1,0 +1,20 @@
+
+<html>
+  <header>
+
+
+<script>
+function verif()
+{
+   var test = document.getElementById('code').value;
+   if(!test.match(/^[a-zA-Z0-9]*$/))
+   {
+	alert("Le code se compose de lettres et de chiffres");
+     }
+   else
+   {
+      window.top.location.href = 'http://bit.ly/'+document.getElementById('code').value;
+   }
+}
+
+</script>
